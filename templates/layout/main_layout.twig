@@ -1,0 +1,9 @@
+{# templates/layout/main_layout.twig #}
+{% extends "base.twig" %}
+
+{% block body %}
+  {% include "partials/navbar.twig" %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+{% endblock %}

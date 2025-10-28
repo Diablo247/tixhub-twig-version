@@ -1,0 +1,26 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <div class="landing-container">
+   <img class="landing-img" src="/assets/preview-img.png" alt="Preview" />
+<img class="landing-imgtwo" src="/assets/preview-img.png" alt="Preview duplicate" />
+
+    <div class="landing-content">
+      <h1 class="landing-title">Tix-Hub</h1>
+
+      <p class="landing-tagline">
+        <span class="landing-highlight">
+          “Simplifying ticket management, one at a time.”
+        </span><br />
+        <span class="landing-subtext">
+          Manage your tickets with ease and efficiency.<br />
+          Track and resolve issues seamlessly.
+        </span>
+      </p>
+
+      <a href="/signup" class="landing-button">
+        Get Started →
+      </a>
+    </div>
+  </div>
+{% endblock %}

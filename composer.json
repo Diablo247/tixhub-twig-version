@@ -1,0 +1,13 @@
+{
+    "name": "user/tixhub-twig",
+    "description": "tixhub",
+    "authors": [
+        {
+            "name": "David Adams",
+            "email": "davebenaaa@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.21"
+    }
+}

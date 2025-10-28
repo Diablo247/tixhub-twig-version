@@ -1,0 +1,84 @@
+.background-container {
+  background: transparent !important;
+}
+
+.background-container .wave svg {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.background-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* decorative circles */
+.circle {
+  position: fixed;
+  border: 2px solid #ff872b;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle.one {
+  top: 10%;
+  left: 7%;
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+}
+
+.circle.two {
+  top: -8%;
+  right: 45%;
+  background-color: #ff872b;
+  width: 140px;
+  height: 140px;
+}
+
+.circle.three {
+  top: 70%;
+  right: 10%;
+  width: 70px;
+  height: 70px;
+}
+
+@media (max-width: 480px) {
+  .circle.two {
+    top: 2px;
+    right: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle.one {
+    top: 100px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .wave.one {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  .wave.two {
+    display: none;
+  }
+}
+/* wavy orange shape at bottom */
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}

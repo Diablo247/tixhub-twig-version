@@ -1,0 +1,51 @@
+{# templates/pages/dashboard.twig #}
+{% extends "layout/main_layout.twig" %}
+
+{% block content %}
+<div class="dashboard">
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Dashboard</h1>
+
+      <div class="header-container">
+        <div class="header-content">
+          <h3 id="welcome-user">Welcome, User!</h3>
+          <p>Here’s a quick overview of your tickets.</p>
+        </div>
+
+        <div class="dashboard-actions">
+          <button id="btn-tickets" class="btn-primary">Tickets</button>
+          <button id="btn-logout" class="btn-secondary">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="stats-container">
+      <div class="stat-card total grid-item" data-status="all">
+        <p id="stat-total">0</p>
+        <h3>Total Tickets</h3>
+      </div>
+
+      <div class="stat-card open grid-item" data-status="open">
+        <p id="stat-open">0</p>
+        <h3>Open</h3>
+      </div>
+
+      <div class="stat-card in-progress grid-item" data-status="in_progress">
+        <p id="stat-in-progress">0</p>
+        <h3>In Progress</h3>
+      </div>
+
+      <div class="stat-card closed grid-item" data-status="closed">
+        <p id="stat-closed">0</p>
+        <h3>Closed</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/assets/js/dashboard.js"></script>
+{% endblock %}

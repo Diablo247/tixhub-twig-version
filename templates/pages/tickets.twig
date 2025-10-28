@@ -1,0 +1,28 @@
+{# templates/pages/dashboard.twig #}
+{% extends "layout/main_layout.twig" %}
+
+{# templates/pages/tickets.twig #}
+
+
+
+
+{% block content %}
+
+<div class="ticket-manager" id="ticket-manager">
+  <div class="ticket-header">
+    <h2>My Tickets</h2>
+    <button id="add-ticket-btn" class="add-btn">+ Add Ticket</button>
+  </div>
+
+  <div id="ticket-filters-container" class="filters"></div>
+
+  <div id="ticket-list-container" class="ticket-list-container"></div>
+  <div id="ticket-form-container" class="ticket-form-container" style="display:none;"></div>
+  <div id="confirm-modal-container"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<script src="/assets/js/tickets.js" defer></script>
+{% endblock %}

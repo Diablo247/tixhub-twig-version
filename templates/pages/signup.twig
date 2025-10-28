@@ -1,0 +1,43 @@
+{# templates/pages/signup.twig #}
+{# templates/pages/signup.twig #}
+{% extends "layout/auth_layout.twig" %}
+
+
+{% block content %}
+<div class="signup-container">
+  <h2>Signup</h2>
+  <form id="signup-form" class="signup-form">
+    <p>Create an account</p>
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" />
+      <p class="error-msg" id="error-name"></p>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" />
+      <p class="error-msg" id="error-email"></p>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter a strong password" />
+      <p class="error-msg" id="error-password"></p>
+    </div>
+
+    <button type="submit" class="submit-btn">Sign Up</button>
+
+    <p class="success-msg" id="success-msg"></p>
+
+    <p class="redirect">
+      Already have an account? <a href="/login">Log in</a>
+    </p>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/assets/js/signup.js"></script>
+{% endblock %}
