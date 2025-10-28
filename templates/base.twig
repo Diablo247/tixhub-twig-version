@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}TixHub{% endblock %}</title>
-    <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/background.css">
-    <link rel="stylesheet" href="/assets/css/LandingPage.css">
-    <link rel="stylesheet" href="/assets/css/auth.css" />
-    <link rel="stylesheet" href="/assets/css/dashboard.css" />
-    <link rel="stylesheet" href="/assets/css/tickets.css" />
-    <link rel="stylesheet" href="/assets/css/about.css" />
-    <link rel="stylesheet" href="/assets/css/footer.css" />
-  
-    {% block styles %}{% endblock %}
-  </head>
-  <body>
-   {% if not hideNavbar %}
-    {% include 'components/navbar.twig' %}
-     {% endif %}
-      {% include 'components/background.twig' %}
-      {% include 'components/footer.twig' %}
-    {% block content %}{% endblock %}
-    <script src="/assets/js/navbar.js"></script>
-     {% block scripts %}{% endblock %}
-  </body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>
+			{% block title %}TixHub
+			{% endblock %}
+		</title>
+		<link rel="stylesheet" href="/assets/css/navbar.css">
+		<link rel="stylesheet" href="/assets/css/background.css">
+		<link rel="stylesheet" href="/assets/css/LandingPage.css">
+		<link rel="stylesheet" href="/assets/css/auth.css"/>
+		<link rel="stylesheet" href="/assets/css/dashboard.css"/>
+		<link rel="stylesheet" href="/assets/css/tickets.css"/>
+		<link rel="stylesheet" href="/assets/css/about.css"/>
+		<link rel="stylesheet" href="/assets/css/footer.css"/> {% block styles %}{% endblock %}
+		</head>
+		<body>
+			{% if not hideNavbar %}
+				{% include 'components/navbar.twig' %}
+			{% endif %}
+			{% include 'components/background.twig' %}
+			{% include 'components/footer.twig' %}
+			{% block content %}{% endblock %}
+			<script src="/assets/js/navbar.js"></script>
+			{% block scripts %}{% endblock %}
+		</body>
+	</html>
