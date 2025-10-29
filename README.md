@@ -31,7 +31,7 @@ it also has other versions built in react and vue
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tixhub.git
+   [git clone https://github.com/Diablo247/tixhub-twig-version.git]
 Open the project in your local server (e.g., XAMPP, WAMP, or Symfony server)
 
 Navigate to the project in your browser: http://localhost:8000
